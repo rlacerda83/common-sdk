@@ -16,15 +16,16 @@ use Gpupo\CommonSdk\Transport;
 
 class TransportTest extends TestCaseAbstract
 {
-    public function testRecebeObjetoOptions()
+    public function testÉUmDriver()
     {
         $transport = new Transport(new Collection([]));
+        $this->assertInstanceof("\Gpupo\CommonSdk\Transport\Driver\DriverInterface", $transport);
 
         return $transport;
     }
 
     /**
-     * @depends testRecebeObjetoOptions
+     * @depends testÉUmDriver
      */
     public function testExecutaRequisiçãoAUmaUrlInformada(Transport $transport)
     {

@@ -14,7 +14,7 @@ namespace Gpupo\CommonSdk\Transport\Driver;
 use Gpupo\Common\Entity\Collection;
 use Gpupo\CommonSdk\Exception\RuntimeException;
 
-class CurlDriver extends DriverAbstract
+class CurlDriver extends DriverAbstract implements DriverInterface
 {
     protected $curl;
 

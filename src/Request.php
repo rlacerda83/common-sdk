@@ -12,6 +12,7 @@
 namespace Gpupo\CommonSdk;
 
 use Gpupo\Common\Entity\Collection;
+use Psr\Http\Message\RequestInterface;
 
 /**
  * @method setMethod(string $string)
@@ -21,7 +22,7 @@ use Gpupo\Common\Entity\Collection;
  * @method getBody()
  * @method getHeader()
  */
-class Request extends Collection
+class Request extends Collection implements RequestInterface
 {
     public function setTransport(Transport $transport)
     {
