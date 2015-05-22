@@ -13,7 +13,6 @@ namespace Gpupo\Tests\CommonSdk;
 
 use Gpupo\Common\Entity\Collection;
 use Gpupo\CommonSdk\Request;
-use Gpupo\Tests\CommonSdk\TestCaseAbstract;
 
 class RequestTest extends TestCaseAbstract
 {

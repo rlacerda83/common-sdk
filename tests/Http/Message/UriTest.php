@@ -11,7 +11,6 @@
 
 namespace Gpupo\Tests\CommonSdk\Http\Message;
 
-use Gpupo\Common\Entity\Collection;
 use Gpupo\CommonSdk\Http\Message\Uri;
 use Gpupo\Tests\CommonSdk\TestCaseAbstract;
 

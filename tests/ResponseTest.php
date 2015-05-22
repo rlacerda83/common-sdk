@@ -19,7 +19,7 @@ class ResponseTest extends TestCaseAbstract
     public function testImplementaPsr7()
     {
         $response = new Response(new Collection([]));
-        $this->assertInstanceof("Psr\Http\Message\ResponseInterface", $response);
+        $this->assertInstanceof("\Psr\Http\Message\ResponseInterface", $response);
 
         return $response;
     }

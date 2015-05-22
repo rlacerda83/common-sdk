@@ -14,6 +14,7 @@ namespace Gpupo\CommonSdk;
 use Gpupo\Common\Entity\Collection;
 use Gpupo\CommonSdk\Exception\RequestException;
 use Psr\Http\Message\ResponseInterface;
+
 /**
  * @method getHttpStatusCode()
  * @method getResponseRaw()
