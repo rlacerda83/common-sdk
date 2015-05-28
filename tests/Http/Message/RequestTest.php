@@ -9,10 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Gpupo\Tests\CommonSdk;
+namespace Gpupo\Tests\CommonSdk\Http\Message;
 
 use Gpupo\Common\Entity\Collection;
-use Gpupo\CommonSdk\Request;
+use Gpupo\CommonSdk\Http\Message\Request;
+use Gpupo\Tests\CommonSdk\TestCaseAbstract;
 
 class RequestTest extends TestCaseAbstract
 {

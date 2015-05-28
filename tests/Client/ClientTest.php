@@ -55,7 +55,7 @@ class ClientTest extends TestCaseAbstract
      */
     public function testAcessoAObjetoRequest($client)
     {
-        $this->assertInstanceOf('\Gpupo\CommonSdk\Request', $client->factoryRequest('/'));
+        $this->assertInstanceOf('\Gpupo\CommonSdk\Http\Message\Request', $client->factoryRequest('/'));
     }
 
     /**

@@ -9,9 +9,8 @@
  * file that was distributed with this source code.
  */
 
-namespace Gpupo\CommonSdk;
+namespace Gpupo\CommonSdk\Http\Message;
 
-use Gpupo\Common\Entity\Collection;
 use Psr\Http\Message\RequestInterface;
 
 /**
@@ -22,7 +21,7 @@ use Psr\Http\Message\RequestInterface;
  * @method getBody()
  * @method getHeader()
  */
-class Request extends Collection implements RequestInterface
+class Request extends AbstractMessage implements RequestInterface
 {
     public function setTransport(Transport $transport)
     {

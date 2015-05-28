@@ -12,8 +12,8 @@
 namespace Gpupo\CommonSdk\Client;
 
 use Gpupo\CommonSdk\Exception\RequestException;
-use Gpupo\CommonSdk\Request;
-use Gpupo\CommonSdk\Response;
+use Gpupo\CommonSdk\Http\Message\Request;
+use Gpupo\CommonSdk\Http\Message\Response;
 use Gpupo\CommonSdk\Transport;
 
 abstract class ClientAbstract extends BoardAbstract
