@@ -12,7 +12,7 @@
 namespace Gpupo\Tests\CommonSdk;
 
 use Gpupo\Common\Entity\Collection;
-use Gpupo\CommonSdk\Response;
+use Gpupo\CommonSdk\Http\Message\Response;
 
 class ResponseTest extends TestCaseAbstract
 {
