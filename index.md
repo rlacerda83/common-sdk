@@ -1,19 +1,32 @@
 ---
 layout: default
 ---
+
+<!-- main -->
+
 # common-sdk
 
 Componente de uso comum entre SDKs para integração a partir de aplicações PHP com Restful webservices
+
 <!-- require -->
 
-## Requisitos
+## Requisitos para uso
 
 * PHP >= *5.6*
 * [curl extension](http://php.net/manual/en/intro.curl.php)
+* [Composer Dependency Manager](http://getcomposer.org)
 
-<!-- //require -->
+Este componente **não é uma aplicação Stand Alone** e seu objetivo é ser utilizado como biblioteca.
+Sua implantação deve ser feita por desenvolvedores experientes.
 
-<!-- licence -->
+**Isto não é um Plugin!**
+
+As opções que funcionam no modo de comando apenas servem para depuração em modo de
+desenvolvimento.
+
+A documentação mais importante está nos testes unitários. Se você não consegue ler os testes unitários, eu recomendo que não utilize esta biblioteca.
+
+<!-- license -->
 
 ## Direitos autorais e de licença
 
@@ -34,16 +47,12 @@ Permitido:
 - Modificação
 - Distribuição
 - Sublicenciamento
-- Proibido
 
 Proibido:
 
 - Responsabilidade Assegurada
 
-<!-- //licence -->
-<!-- qa -->
-
----
+<!-- QA -->
 
 ## Indicadores de qualidade
 
@@ -52,6 +61,32 @@ Proibido:
 [![Codacy Badge](https://www.codacy.com/project/badge/323afbd6d88f4c4dbc4dec27810c70b9)](https://www.codacy.com/app/g/common-sdk)
 [![Code Climate](https://codeclimate.com/github/gpupo/common-sdk/badges/gpa.svg)](https://codeclimate.com/github/gpupo/common-sdk)
 [![Test Coverage](https://codeclimate.com/github/gpupo/common-sdk/badges/coverage.svg)](https://codeclimate.com/github/gpupo/common-sdk/coverage)
+
+<!-- thanks -->
+
+---
+
+## Agradecimentos
+
+* A todos os que [contribuiram com patchs](https://github.com/gpupo/common-sdk/contributors);
+* Aos que [fizeram sugestões importantes](https://github.com/gpupo/common-sdk/issues);
+* Aos desenvolvedores que criaram as [bibliotecas utilizadas neste componente](https://github.com/gpupo/common-sdk/blob/master/Resources/doc/libraries-list.md).
+
+ _- [Gilmar Pupo](http://www.g1mr.com/)_
+
+<!-- install -->
+
+---
+
+## Instalação
+
+Adicione o pacote ``common-sdk`` ao seu projeto utilizando [composer](http://getcomposer.org):
+
+    composer require gpupo/common-sdk
+
+<!-- console -->
+
+
 <!-- links -->
 
 ---
@@ -60,9 +95,24 @@ Proibido:
 
 * [Composer Package](https://packagist.org/packages/gpupo/) on packagist.org
 * [SDKs para o Ecommerce do Brasil](http://www.g1mr.com/common-sdk/)
+
+<!-- links-common -->
+
+
 <!-- dev -->
 
+
+<!-- todo -->
+
+
+<!-- dev-common -->
+
+
+---
+
 ## Propriedades dos objetos
+
+<!-- testdox -->
 
 ### CommonSdk\Client\Client
 
@@ -85,46 +135,49 @@ Proibido:
 - [x] Acesso a identificador padrao da entidade
 - [x] Acesso ao nome da entidade atual
 - [x] Valida dados obrigatórios
-- [x] Possui getter para acesso a foo
-- [x] Possui setter para definir foo
-- [x] Possui getter para acesso a bar
-- [x] Possui setter para definir bar
-- [x] Entidade é uma Coleção
+- [x] Possui getter para acesso a foo 
+- [x] Possui setter para definir foo 
+- [x] Possui getter para acesso a bar 
+- [x] Possui setter para definir bar 
+- [x] Entidade é uma Coleção 
 
 ### CommonSdk\Entity\Manager
 
 
 - [x] Factory collection
-- [x] Nao encontra diferenca entre entidades iguais
-- [x] Encontra diferenca entre entidades diferentes
-- [x] Encontra diferenca entre entidades diferentes a partir de chaves selecionadas
-- [x] Falha ao tentar encontrar diferenca usando propriedade inexistente
+- [x] Nao encontra diferenca entre entidades iguais 
+- [x] Encontra diferenca entre entidades diferentes 
+- [x] Encontra diferenca entre entidades diferentes a partir de chaves selecionadas 
+- [x] Falha ao tentar encontrar diferenca usando propriedade inexistente 
 
 ### CommonSdk\Entity\Metadata\MetadataContainer
 
 
-- [x] É um objeto metadata container
-- [x] Possui objeto metadata
-- [x] Possui propriedade indicadora de quantidade de registros
+- [x] É um objeto metadata container 
+- [x] Possui objeto metadata 
+- [x] Possui propriedade indicadora de quantidade de registros 
 
 ### CommonSdk\Entity\Schema\Tools
 
 
-- [x] Valida tipos de informacao
-- [x] Normaliza tipos de informacao
+- [x] Valida tipos de informacao 
+- [x] Normaliza tipos de informacao 
 - [x] Aborta com uso de dados invalidos
 - [x] Sucesso com uso de dados validos
 
 ### CommonSdk\Exception\Main
 
 
-- [x] A biblioteca possui uma lista de Exceções
+- [x] A biblioteca possui uma lista de Exceções 
 
 ### CommonSdk\Transport
 
 
 - [x] Recebe objeto options
 - [x] Executa uma requisição para url informada
+
+
+<!-- libraries-table -->
 
 
 ## Lista de dependências (libraries)
@@ -146,7 +199,7 @@ monolog/monolog | 1.19.0 | Sends your logs to files, sockets, inboxes, databases
 myclabs/deep-copy | 1.5.1 | Create deep copies (clones) of your objects
 phpdocumentor/reflection-common | 1.0 | Common reflection classes used by phpdocumentor to reflect the code structure
 phpdocumentor/reflection-docblock | 3.1.0 | With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.
-phpdocumentor/type-resolver | 0.2 |
+phpdocumentor/type-resolver | 0.2 | 
 phpspec/prophecy | v1.6.1 | Highly opinionated mocking framework for PHP 5.3+
 phpunit/php-code-coverage | 4.0.0 | Library that provides collection, processing, and rendering functionality for PHP code coverage information.
 phpunit/php-file-iterator | 1.4.1 | FilterIterator implementation that filters files based on a list of suffixes.
@@ -178,3 +231,9 @@ symfony/stopwatch | v3.1.1 | Symfony Stopwatch Component
 symfony/yaml | v3.1.1 | Symfony Yaml Component
 twig/twig | v1.24.1 | Twig, the flexible, fast, and secure template language for PHP
 webmozart/assert | 1.0.2 | Assertions to validate method input/output with nice error messages.
+
+
+
+<!-- footer-common -->
+
+
