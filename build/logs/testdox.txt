@@ -1,0 +1,88 @@
+Gpupo\Tests\CommonSdk\Client\Client
+ [x] Url independente de configuracao
+ [x] Url baseado em configuracao
+ [x] Url evitando configuracao
+ [x] Acesso a objeto request
+ [x] Objeto request possui header
+ [x] Executa requisições post
+
+Gpupo\Tests\CommonSdk\Client\Oauth2\Provider\GenericProvider
+ [x] Acesso a url de autorizacao
+
+Gpupo\Tests\CommonSdk\Entity\Entity
+ [x] Acesso a identificador padrao da entidade
+ [x] Acesso ao nome da entidade atual
+ [x] Valida dados obrigatórios
+ [x] Possui getter para acesso a foo 
+ [x] Possui setter para definir foo 
+ [x] Possui getter para acesso a bar 
+ [x] Possui setter para definir bar 
+
+Gpupo\Tests\CommonSdk\Entity\Manager
+ [x] Factory collection
+ [x] Nao encontra diferenca entre entidades iguais 
+ [x] Encontra diferenca entre entidades diferentes 
+ [x] Encontra diferenca entre entidades diferentes a partir de chaves selecionadas 
+ [x] Falha ao tentar encontrar diferenca usando propriedade inexistente 
+
+Gpupo\Tests\CommonSdk\Entity\Metadata\MetadataContainer
+ [x] É um objeto metadata container 
+ [x] Possui objeto metadata 
+ [x] Possui propriedade indicadora de quantidade de registros 
+
+Gpupo\Tests\CommonSdk\Entity\Metadata\Metadata
+ [ ] ``getOffset()`` 
+ [ ] ``getLimit()`` 
+ [ ] ``getTotalRows()`` 
+
+Gpupo\Tests\CommonSdk\Entity\Schema\Tools
+ [x] Valida tipos de informacao 
+ [x] Normaliza tipos de informacao 
+ [x] Aborta com uso de dados invalidos
+ [x] Sucesso com uso de dados validos
+
+Gpupo\Tests\CommonSdk\Exception\ClientException
+ [ ] ``setMessage()`` 
+ [ ] ``toLog()`` 
+ [ ] ``addMessagePrefix()`` 
+
+Gpupo\Tests\CommonSdk\Exception\InvalidArgumentException
+ [ ] ``setMessage()`` 
+ [ ] ``toLog()`` 
+ [ ] ``addMessagePrefix()`` 
+
+Gpupo\Tests\CommonSdk\Exception\Main
+ [x] A biblioteca possui uma lista de Exceções 
+
+Gpupo\Tests\CommonSdk\Exception\RuntimeException
+ [ ] ``setMessage()`` 
+ [ ] ``toLog()`` 
+ [ ] ``addMessagePrefix()`` 
+
+Gpupo\Tests\CommonSdk\Exception\UnexpectedValueException
+ [ ] ``setMessage()`` 
+ [ ] ``toLog()`` 
+ [ ] ``addMessagePrefix()`` 
+
+Gpupo\Tests\CommonSdk\Map
+ [ ] ``getResource()`` 
+ [ ] ``placeHolderValueEmpty()`` 
+ [ ] ``populatePlaceholders()`` 
+ [ ] ``toLog()`` 
+ [ ] ``getMode()`` 
+
+Gpupo\Tests\CommonSdk\Request
+ [ ] ``getBody()`` 
+ [ ] ``getHeader()`` 
+ [ ] ``setTransport()`` 
+ [ ] ``getTransport()`` 
+ [ ] ``exec()`` 
+
+Gpupo\Tests\CommonSdk\Response
+ [ ] ``validate()`` 
+ [ ] ``getData()`` 
+
+Gpupo\Tests\CommonSdk\Transport
+ [x] Recebe objeto options
+ [x] Executa uma requisição para url informada
+
